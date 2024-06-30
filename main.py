@@ -5,8 +5,16 @@ def main():
     Code Your Program here
     ########################################
     """
-    result = True
-
+    length = len(email)
+    
+    if email[0].isalpha():
+        if 5 < length < 30:
+            result = True
+    else:
+        result = False
+        
+    print (result)
+    print (length)
     ########################################
     # Do not delete the return statement
     ########################################
